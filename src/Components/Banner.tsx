@@ -10,7 +10,7 @@ import { FaUserSecret } from "react-icons/fa";
 export default function Banner() {
  
   return (
-    <div className="h-[92vh] h-full bg-white flex flex-col mt-32 md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
+    <div className="h-[92vh] h-full bg-white flex flex-col mt-34 md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
       <div className="flex flex-col gap-20">
         <div>
          <FaUserSecret size={32} className="text-blue-500 mb-2 md:hidden"/>
@@ -21,9 +21,10 @@ export default function Banner() {
           <p className="sm:text-lg">A Front End Specialist , Full Stack Engineer.</p>
           <br />
           <p className="text-slate-500 text-sm">
-            Transforming thoughts into functional features with logic.
+            I transform thoughts into <br/> functional features with logic,
             <br/>
-            Converting designs into interactive webpages with Figma.
+            <br/>
+            and convert Figma designs <br/> into responsive webpages.
           </p>
         </div>
         <div className='flex justify-between items-center  text-center  font-bold text-xs sm:text-sm mt-7'>
