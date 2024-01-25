@@ -23,7 +23,7 @@ export default function Socials() {
   ];
 
   return (
-    <div className="flex gap-7 bg-black">
+    <div className="flex gap-7">
       {socials.map((social, index) => (
         <a
           key={index}
