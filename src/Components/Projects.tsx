@@ -23,7 +23,7 @@ export default function Projects() {
         </div>
         <div>
           <div>
-            <p className="font-bold text-xl flex gap-2 items-center my-4 mt-10">
+            <p className="font-bold text-xl flex gap-2 items-center my-5 mt-12">
               <GoDotFill/> <span>Front End</span>
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 ">

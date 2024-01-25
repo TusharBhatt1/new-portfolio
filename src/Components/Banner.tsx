@@ -10,17 +10,17 @@ import { FaUserSecret } from "react-icons/fa";
 export default function Banner() {
  
   return (
-    <div className="h-[92vh] h-full bg-black text-white flex flex-col md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
+    <div className="bg-white h-full flex flex-col md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
       <div className="flex flex-col gap-14 md:gap-18 mt-20">
         <div>
-         <FaUserSecret size={32} className="text-blue-700 mb-2 md:hidden"/>
+         <FaUserSecret size={32} className=" mb-2 md:hidden"/>
           <h1 className="text-3xl sm:text-4xl">
-            Greetings! <br className="md:hidden"/> I'm <span className="font-extrabold">Tushar Bhatt.</span>{" "}
+            Hey 👋 <br className="md:hidden"/> I'm <span className="font-extrabold">Tushar Bhatt</span>
           </h1>
           <br />
-          <p className="sm:text-lg">A Front End Specialist , Full Stack Engineer.</p>
+          <p className="sm:text-lg font-bold">A Front End Specialist , Full Stack Engineer {"</>"}</p>
           <br />
-          <p className="text-slate-400 text-sm">
+          <p className="text-slate-500 text-sm">
             I transform thoughts into <br/> functional features with logic,
             <br/>
             <br/>
