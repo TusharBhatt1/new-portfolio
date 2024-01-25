@@ -3,6 +3,7 @@ import { FaBookReader } from "react-icons/fa";
 import Lottie from 'lottie-react';
 import animationData from "../assets/Animation - 1706195875014.json"
 import Socials from './other/Socials';
+import { FaUserSecret } from "react-icons/fa";
 
 
 
@@ -12,8 +13,9 @@ export default function Banner() {
     <div className="h-[92vh] h-full bg-white flex flex-col mt-32 md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
       <div className="flex flex-col gap-20">
         <div>
+         <FaUserSecret size={32} className="text-blue-500 mb-2 md:hidden"/>
           <h1 className="text-2xl sm:text-3xl">
-            Greetings! I'm <span className="font-extrabold">Tushar Bhatt.</span>{" "}
+            Greetings! <br className="md:hidden"/> I'm <span className="font-extrabold">Tushar Bhatt.</span>{" "}
           </h1>
           <br />
           <p className="sm:text-lg">A Front End Specialist , Full Stack Engineer.</p>

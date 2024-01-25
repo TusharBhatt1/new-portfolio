@@ -10,7 +10,7 @@ export default function Skills() {
         <div className="my-2 sm:my-12">
             <Heading title="Skills"/>
             <div className="flex justify-around ">
-            <div className="grid grid-cols-4 sm:grid-cols-6 gap-3 sm:gap-12 justify-center items-center">
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-5 sm:gap-12 justify-center items-center">
            {skills.map((skill)=><SkillBox key={skill.name} skill={skill}/>)}
             </div>
             </div>
