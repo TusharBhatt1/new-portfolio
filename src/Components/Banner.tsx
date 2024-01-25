@@ -11,10 +11,10 @@ export default function Banner() {
  
   return (
     <div className="h-[92vh] h-full bg-white flex flex-col md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
-      <div className="flex flex-col gap-14 md:gap-20 mt-20">
+      <div className="flex flex-col gap-14 md:gap-18 mt-20">
         <div>
          <FaUserSecret size={32} className="text-blue-700 mb-2 md:hidden"/>
-          <h1 className="text-2xl sm:text-3xl">
+          <h1 className="text-3xl sm:text-4xl">
             Greetings! <br className="md:hidden"/> I'm <span className="font-extrabold">Tushar Bhatt.</span>{" "}
           </h1>
           <br />

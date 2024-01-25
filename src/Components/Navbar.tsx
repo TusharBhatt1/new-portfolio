@@ -4,7 +4,7 @@ import Myself from "../assets/Images/my.webp"
 export default function Navbar() {
   return (
     <div className="fixed w-full z-10 bg-slate-200 font-bold">
-      <div className="flex justify-around items-center  p-1 shadow-lg ">
+      <div className="flex justify-around items-center  p-2 shadow-lg ">
         <img className="md:h-16 md:w-16 h-12 w-12  rounded-full" src={Myself}/>
         <div className="hidden md:flex gap-7">
           <p>About</p>
