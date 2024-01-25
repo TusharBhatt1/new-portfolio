@@ -23,7 +23,7 @@ export default function Socials() {
   ];
 
   return (
-    <div className="flex gap-7">
+    <div className="flex gap-7 bg-black">
       {socials.map((social, index) => (
         <a
           key={index}
@@ -31,7 +31,7 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={social.onClick}
-          className={`text-${social.color} cursor-pointer bg-slate-100 text-xl sm:text-3xl hover:bg-slate-150 p-2 rounded-full`}
+          className={`text-${social.color} cursor-pointer bg-slate-100 text-xl sm:text-3xl hover:bg-slate-300 p-2 rounded-full`}
         >
           {social.icon}
         </a>
