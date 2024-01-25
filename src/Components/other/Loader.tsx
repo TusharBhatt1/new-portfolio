@@ -14,7 +14,7 @@ export default function Loader() {
   }, []);
 
   return (
-    <div className="h-[100vh] bg-black text-white flex justify-center items-center">
+    <div className="h-[100vh] bg-black text-white flex flex-col gap-4 justify-center items-center">
       <Lottie className="h-80 w-80" animationData={loadingAnimation} />
       <p className="bg-slate-800 p-2 rounded-full">Taking you there in <span>{count}</span></p>
     </div>
