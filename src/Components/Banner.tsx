@@ -18,7 +18,7 @@ export default function Banner() {
             Hey 👋 <br className="md:hidden"/> I'm <span className="font-extrabold">Tushar Bhatt</span>
           </h1>
           <br />
-          <p className="sm:text-lg font-bold">A Front End Specialist , Full Stack Engineer {"</>"}</p>
+          <p className="sm:text-lg font-bold">{"</>"} A Full Stack Engineer , expertise in Front End  {"</>"}</p>
           <br />
           <p className="text-slate-500 text-sm">
             I transform thoughts into <br/> functional features with logic,
