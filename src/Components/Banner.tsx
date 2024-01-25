@@ -10,8 +10,8 @@ import { FaUserSecret } from "react-icons/fa";
 export default function Banner() {
  
   return (
-    <div className="h-[92vh] h-full bg-white flex flex-col mt-34 md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
-      <div className="flex flex-col gap-20">
+    <div className="h-[92vh] h-full bg-white flex flex-col md:mt-2 md:flex-row justify-around items-center tracking-wide p-4">
+      <div className="flex flex-col gap-14 md:gap-20 mt-20">
         <div>
          <FaUserSecret size={32} className="text-blue-500 mb-2 md:hidden"/>
           <h1 className="text-2xl sm:text-3xl">
