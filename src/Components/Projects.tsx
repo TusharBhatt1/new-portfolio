@@ -14,7 +14,7 @@ export default function Projects() {
             <p className="text-xl font-bold flex items-center gap-2 my-4 ">
               <GoDotFill/> <span>Full Stack</span> 
             </p>
-            <div className="grid md:grid-cols-2 ">
+            <div className="grid md:grid-cols-2 gap-14 ">
               {projects.fullStack.map((project) => (
                 <ProjectBox key={project.name} project={project} />
               ))}
