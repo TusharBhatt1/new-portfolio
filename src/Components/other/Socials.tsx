@@ -15,7 +15,7 @@ export default function Socials() {
   };
 
   const socials: SocialType[] = [
-    { icon: <FaLinkedin />, color: 'blue-500', href: 'www.linkedin.com/in/tushar-bhatt-59b64623b' },
+    { icon: <FaLinkedin />, color: 'blue-500', href: 'https://linkedin.com/in/tushar-bhatt-59b64623b' },
     { icon: <FaTwitter />, color: 'blue-700', href: 'https://twitter.com/Tushar0135' },
     { icon: <FaGithub />, color: 'gray-800', href: 'https://github.com/TusharBhatt1' },
     { icon: <FaEnvelope />, color: 'yellow-400', href: 'mailto:tusharbhatt0135@gmail.com' },
