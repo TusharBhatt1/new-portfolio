@@ -36,18 +36,18 @@ export const projects: ProjectsType = {
   ],
   frontEnd: [
     {
+      name: "Unbox - Form validations + LRU Caching for recently viewed",
+      liveLink: "https://instapayment.vercel.app",
+      tech: "NextJS , Typescript, React , Zustand , React-hook-form , Yup , Tailwind",
+      gitLink: "https:github.com/TusharBhatt1/bestbuy",
+      image: bestbuy,
+    },
+     {
       name: "Sketch.io - Image Editing Application with Download feature",
       liveLink: "https://zocket-alpha.vercel.app/",
       tech: "React , Typescript , LocalStorage , ColorPicker , React Icons , Tailwind",
       gitLink: "https:github.com/TusharBhatt1/zocket",
       image: sketch,
-    },
-    {
-      name: "Best Buy - Add to Wishlist + LRU Caching for recently viewed",
-      liveLink: "https://bestbuy-main.vercel.app/",
-      tech: "NextJS , Typescript, React , Zustand , React-hook-form , Yup , Tailwind",
-      gitLink: "https:github.com/TusharBhatt1/bestbuy",
-      image: bestbuy,
     },
     {
       name: "Netflix Clone - All in one entertainment Application",
