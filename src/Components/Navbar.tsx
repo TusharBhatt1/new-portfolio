@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className="fixed w-full z-10 bg-white font-bold">
       <div className="flex justify-around items-center  p-2 shadow-lg ">
-        <img className="md:h-12 md:w-12 h-8 w-8  rounded-full" src={Myself}/>
+        <img className="md:size-12 size-8 rounded-full" src={Myself}/>
         <div className="hidden md:flex gap-7">
           <p>About</p>
           <p>Skills</p>
