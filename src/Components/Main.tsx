@@ -14,7 +14,7 @@ export default function Main() {
 					</span>
 				</h1>
 				<h2 className="text-2xl font-bold">Experiences</h2>
-				<div className="my-4">
+				<div className="my-7">
 					<div className="flex gap-2 text-lg">
 						<img src={calIcon} className="size-8 rounded-full" />
 						<div className="flex flex-col">
@@ -126,7 +126,7 @@ export default function Main() {
 			<div className="">
 				<h2 className="text-2xl font-bold">Open Source</h2>
 				<div>
-					<p className="text-lg font-bold my-4"> Won Bounties worth $60</p>
+					<p className="text-lg font-bold my-7"> Won Bounties worth $60</p>
 					<ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
 						<li>
 							Built a High priority feature to allow hosts to disable
