@@ -6,8 +6,8 @@ import dollar10 from "@/assets/dollar10.png";
 export default function Banner() {
 	return (
 		<div className="mt-24 px-7 flex md:flex-row flex-col gap-20 justify-between">
-			<div className="">
-				<h1 className="sm:hidden block">
+			<div>
+				<h1 className="sm:hidden block pb-3 text-lg">
 					Hey 👋 I'm Tushar Bhatt ,{" "}
 					<span className="text-sm">
 						Full Stack Front End Engineer with ~ an year of experience.
@@ -21,7 +21,8 @@ export default function Banner() {
 							<div className="flex gap-2">
 								<span>Software Engineer Intern at</span>
 								<a className="font-bold" href="https://cal.com" target="_blank">
-									Cal.com{" "}
+									<span className="hidden sm:inline">Cal.com</span>
+									<span className="inline sm:hidden">Cal</span>
 								</a>
 							</div>
 							<span className="text-sm text-slate-400">
@@ -43,8 +44,10 @@ export default function Banner() {
 							</li>
 							<li>
 								Fixed a high-priority spam issue by capping{" "}
-								<span className="italic">seatsPerTimeSlot both the Front and Backend ,</span> to prevent mass
-								fake bookings with high {" "}
+								<span className="italic">
+									seatsPerTimeSlot both the Front and Backend ,
+								</span>{" "}
+								to prevent mass fake bookings with high{" "}
 								<span className="italic">seatsPerTimeSlot</span>. (
 								<a
 									href="https://github.com/calcom/cal.com/pull/20213"
