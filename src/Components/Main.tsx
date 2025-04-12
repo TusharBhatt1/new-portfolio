@@ -3,11 +3,11 @@ import pfmIcon from "@/assets/pfm-logo.png";
 import dollar50 from "@/assets/dollar50.png";
 import dollar10 from "@/assets/dollar10.png";
 
-export default function Banner() {
+export default function Main() {
 	return (
-		<div className="mt-24 px-4 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
+		<div className="mt-28 px-3 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
 			<div>
-				<h1 className="sm:hidden block pb-3 text-lg">
+				<h1 className="md:hidden block pb-3 text-lg">
 					Hey 👋 I'm Tushar Bhatt ,{" "}
 					<span className="text-sm">
 						Full Stack Front End Engineer with ~ an year of experience.
@@ -29,8 +29,8 @@ export default function Banner() {
 							</span>
 						</div>
 					</div>
-					<div className="mt-4 pl-10 text-slate-200">
-						<ul style={{ listStyleType: "disc" }} className="space-y-2">
+					<div className="mt-4 text-slate-200">
+						<ul style={{ listStyleType: "disc"}} className="space-y-2 pl-4">
 							<li>
 								Built simple to complex features and reviewed close to 150 PRs.
 							</li>
@@ -96,8 +96,8 @@ export default function Banner() {
 							</span>
 						</div>
 					</div>
-					<div className="mt-4 pl-10 text-slate-200">
-						<ul style={{ listStyleType: "disc" }} className="space-y-1">
+					<div className="mt-4 text-slate-200">
+						<ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
 							<li>
 								Collaborated with the Pocket Toons team to implement an image
 								trimming feature, reducing backend calls and S3 costs.
