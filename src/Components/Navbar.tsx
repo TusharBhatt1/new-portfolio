@@ -1,23 +1,11 @@
 
-import Myself from "../assets/Images/my.webp"
+import Socials from "./other/Socials";
 
 export default function Navbar() {
   return (
-    <div className="fixed w-full z-10 bg-white font-bold">
-      <div className="flex justify-around items-center  p-2 shadow-lg ">
-        <img className="md:size-12 size-8 rounded-full" src={Myself}/>
-        <div className="hidden md:flex gap-7">
-          <p>About</p>
-          <p>Skills</p>
-          <p>Project</p>
-          <p>Contact</p>
-        </div>
-        <div>
-          <a href="https://bit.ly/tbv0" target="_blank" className="text-white bg-black p-2 px-3 rounded-lg hover:bg-blue-700">
-            Resume
-          </a>
-        </div>
-      </div>
+    <div className="fixed w-full flex md:flex-row flex-col justify-between items-center p-4 border-b border-slate-800 z-10 bg-black font-bold">
+      <h1 className="sm:block hidden">Hey 👋 I'm Tushar Bhatt  , <span className="text-sm">Full Stack Front End Engineer with ~ an year of experience</span></h1>
+      <Socials/>
     </div>
   );
 }

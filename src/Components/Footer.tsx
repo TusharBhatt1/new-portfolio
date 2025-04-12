@@ -7,7 +7,7 @@ export default function Footer() {
       <p className="text-2xl font-bold flex justify-center items-center gap-2">Thankyou for the Visit <FaFireAlt className="text-yellow-400"/></p>
       <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
       <Socials />
-      <p>&copy; 2024 Tushar Bhatt. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Tushar Bhatt. All rights reserved.</p>
       </div>
      
     </footer>
