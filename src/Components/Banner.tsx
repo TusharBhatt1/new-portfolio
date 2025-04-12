@@ -5,7 +5,7 @@ import dollar10 from "@/assets/dollar10.png";
 
 export default function Banner() {
 	return (
-		<div className="mt-24 px-7 flex md:flex-row flex-col gap-20 justify-between">
+		<div className="mt-24 px-4 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
 			<div>
 				<h1 className="sm:hidden block pb-3 text-lg">
 					Hey 👋 I'm Tushar Bhatt ,{" "}
@@ -21,8 +21,7 @@ export default function Banner() {
 							<div className="flex gap-2">
 								<span>Software Engineer Intern at</span>
 								<a className="font-bold" href="https://cal.com" target="_blank">
-									<span className="hidden sm:inline">Cal.com</span>
-									<span className="inline sm:hidden">Cal</span>
+									Cal.com{" "}
 								</a>
 							</div>
 							<span className="text-sm text-slate-400">
