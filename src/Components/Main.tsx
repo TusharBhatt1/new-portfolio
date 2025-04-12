@@ -25,7 +25,7 @@ export default function Main() {
 								</a>
 							</div>
 							<span className="text-sm text-slate-400">
-								Feb 2025 - May 2025 (USA , Remote)
+								Feb 2025 - Present (USA , Remote)
 							</span>
 						</div>
 					</div>
