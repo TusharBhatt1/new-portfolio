@@ -7,7 +7,7 @@ export default function Main() {
 	return (
 		<div className="mt-28 px-5 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
 			<div>
-				<h1 className="md:hidden block pb-3 text-lg">
+				<h1 className="md:hidden block pb-3 text-lg mb-2">
 					Hey 👋 I'm Tushar Bhatt ,{" "}
 					<span className="text-sm">
 						Full Stack Front End Engineer with ~ an year of experience.
