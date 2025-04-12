@@ -123,11 +123,11 @@ export default function Main() {
 					</div>
 				</div>
 			</div>
-			<div className="">
+			<div>
 				<h2 className="text-2xl font-bold">Open Source</h2>
 				<div>
 					<ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
-					<li className="text-lg font-bold my-7"> Won Bounties worth $60</li>
+					<li className="text-lg font-bold mt-7"> Won Bounties worth $60</li>
 
 						<li>
 							Built a High priority feature to allow hosts to disable
