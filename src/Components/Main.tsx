@@ -5,7 +5,7 @@ import dollar10 from "@/assets/dollar10.png";
 
 export default function Main() {
 	return (
-		<div className="mt-28 px-3 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
+		<div className="mt-28 px-5 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
 			<div>
 				<h1 className="md:hidden block pb-3 text-lg">
 					Hey 👋 I'm Tushar Bhatt ,{" "}
