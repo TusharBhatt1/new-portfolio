@@ -126,8 +126,9 @@ export default function Main() {
 			<div className="">
 				<h2 className="text-2xl font-bold">Open Source</h2>
 				<div>
-					<p className="text-lg font-bold my-7"> Won Bounties worth $60</p>
 					<ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
+					<li className="text-lg font-bold my-7"> Won Bounties worth $60</li>
+
 						<li>
 							Built a High priority feature to allow hosts to disable
 							Cancellation/Rescheduling for an event - $50 (
