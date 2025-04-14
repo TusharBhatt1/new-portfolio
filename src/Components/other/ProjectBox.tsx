@@ -10,8 +10,8 @@ export default function ProjectBox({ project }: { project: projectType }) {
         <div className="flex items-center justify-between  gap-2">
         <p className="text-sm font-bold">{name}</p>
         <span className="flex text-2xl gap-4">
-          <a href={gitLink} className="hover:bg-slate-200 p-1 rounded-full"><AiFillGithub/></a>
-          <a href={liveLink}  className="hover:bg-slate-200 p-1 rounded-full"><TbWorld/></a>
+          <a href={gitLink} className="bg-slate-700 hover:bg-black p-1 rounded-full"><AiFillGithub/></a>
+          <a href={liveLink}  className="bg-slate-700 hover:bg-black p-1 rounded-full"><TbWorld/></a>
         </span>
        
         </div>
