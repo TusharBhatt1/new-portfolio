@@ -2,7 +2,7 @@ import calIcon from "@/assets/cal-com-icon.svg";
 import pfmIcon from "@/assets/pfm-logo.png";
 import dollar50 from "@/assets/dollar50.png";
 import dollar10 from "@/assets/dollar10.png";
-
+import reactLib from "@/assets/react-lib.png";
 export default function Main() {
 	return (
 		<div className="mt-28 px-5 sm:px-7 flex md:flex-row flex-col gap-20 justify-between">
@@ -187,6 +187,8 @@ export default function Main() {
 							</a>{" "}
 							: A React package for efficient frontend images trimming ,
 							reducing backend dependencies and costs.
+
+							<img src={reactLib} className="my-4" />
 						</li>
 					</ul>
 				</div>
