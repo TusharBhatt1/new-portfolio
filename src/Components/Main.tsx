@@ -92,7 +92,7 @@ export default function Main() {
 								</a>
 							</div>
 							<span className="text-sm text-slate-400">
-								Aug 2024 - January 2025 (Bengaluru , Remote)
+								July 2024 - January 2025 (Bengaluru , Remote)
 							</span>
 						</div>
 					</div>
