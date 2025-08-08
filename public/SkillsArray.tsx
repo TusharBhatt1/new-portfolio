@@ -3,7 +3,6 @@ import {
   FaCss3,
   FaJsSquare,
   FaReact,
-  FaNodeJs,
   FaReacteurope,
 } from "react-icons/fa";
 import {
@@ -12,7 +11,8 @@ import {
   SiRedux,
   SiMongodb,
   SiExpress,
-  SiGit
+  SiGit,
+  SiTrpc
 } from "react-icons/si";
 
 
@@ -69,9 +69,9 @@ export const allSkills: SkillsType[] = [
     color: "black", // Zustand gold color
   },
   {
-    name: "Node.js",
-    icon: <FaNodeJs />,
-    color: "green-500", // Node.js green color
+    name: "Trpc",
+    icon: <SiTrpc />,
+    color: "blue-500", // Node.js green color
   },
   {
     name: "Express",
