@@ -7,17 +7,17 @@ import Experiences from "./Components/Experiences";
 import FeaturedProject from "./Components/FeaturedProject";
 
 export default function App() {
-	return (
-		<div className="flex flex-col  px-5 sm:px-7">
-			<Navbar />
-			<div>
-				<Experiences />
-				<FeaturedProject/>
-				<Wom />
-				<Skills />
-				<Projects />
-				<Footer />
-			</div>
-		</div>
-	);
+  return (
+    <div className="flex flex-col">
+      <Navbar />
+      <div className="px-5 sm:px-7">
+        <Experiences />
+        <FeaturedProject />
+        <Wom />
+        <Skills />
+        <Projects />
+        <Footer />
+      </div>
+    </div>
+  );
 }

@@ -6,7 +6,7 @@ export default function FeaturedProject() {
       <Heading title="Featured Project" alignment="left" />
       <div className="space-y-5">
         <div className="flex flex-col gap-4">
-          <p>
+          <p className="text-lg">
             Built Official Browser Extension for{" "}
             <a
               className="font-bold"
