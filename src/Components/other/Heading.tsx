@@ -6,8 +6,8 @@ export default function Heading({
   alignment?: "center" | "left";
 }) {
   return (
-    <div className={`text-${alignment} font-extrabold mt-20 mb-10 `}>
-      <span className="text-3xl">{title}</span>
-    </div>
+    <p className={`text-${alignment} text-2xl font-extrabold mt-20 mb-10 `}>
+     {title}
+    </p>
   );
 }
