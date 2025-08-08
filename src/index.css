@@ -3,4 +3,25 @@
   font-size: 15px;
   color: white;
   background:rgb(8, 0, 0);
+  line-height: 24px;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }

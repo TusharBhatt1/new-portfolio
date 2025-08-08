@@ -1,16 +1,18 @@
-import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Wom from "./Components/Wom";
+import Experiences from "./Components/Experiences";
+import FeaturedProject from "./Components/FeaturedProject";
 
 export default function App() {
 	return (
-		<div className="flex flex-col">
+		<div className="flex flex-col  px-5 sm:px-7">
 			<Navbar />
 			<div>
-				<Main />
+				<Experiences />
+				<FeaturedProject/>
 				<Wom />
 				<Skills />
 				<Projects />
