@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="flex flex-col">
       <Navbar />
-      <div className="max-w-7xl m-auto px-5 sm:px-7">
+      <div className="px-5 sm:px-7">
         <Experiences />
         <FeaturedProject />
         <Wom />
