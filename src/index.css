@@ -6,6 +6,18 @@
   line-height: 24px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 a {
   position: relative;
   text-decoration: none;

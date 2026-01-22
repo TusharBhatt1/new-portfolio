@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaEnvelope, FaGithub } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 
@@ -42,16 +43,21 @@ export default function Socials() {
 	return (
 		<div className="flex gap-7">
 			{socials.map((social, index) => (
-				<a
+				<motion.a
 					key={index}
 					href={social.href}
 					target="_blank"
 					rel="noopener noreferrer"
 					onClick={social.onClick}
+					initial={{ opacity: 0, scale: 0 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.3, delay: index * 0.1 }}
+					whileHover={{ scale: 1.2, y: -5, rotate: 5 }}
+					whileTap={{ scale: 0.9 }}
 					className={`text-${social.color} cursor-pointer text-xl sm:text-3xl hover:bg-slate-700 p-2 rounded-full`}
 				>
 					{social.icon}
-				</a>
+				</motion.a>
 			))}
 		</div>
 	);

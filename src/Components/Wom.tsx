@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import Heading from "./other/Heading";
 import wom1 from "@/assets/wom/wom1.png";
@@ -20,16 +21,26 @@ export default function Wom() {
 	];
 
 	return (
-		<div>
+		<motion.div
+			initial={{ opacity: 0, y: 30 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true, margin: "-100px" }}
+			transition={{ duration: 0.6 }}
+		>
 			<Heading title="Word of mouth" />
 			<Marquee speed={100} pauseOnHover>
 				{woms.map(({ src, title }, index) => (
-					<div key={index} className="mx-2 cursor-pointer">
+					<motion.div
+						key={index}
+						className="mx-2 cursor-pointer"
+						whileHover={{ scale: 1.1, y: -5 }}
+						transition={{ duration: 0.2 }}
+					>
 						<img src={src} alt={`testimonial-${index + 1}`} className="h-20" />
 						<p className="text-center mt-1 text-slate-400">{title}</p>
-					</div>
+					</motion.div>
 				))}
 			</Marquee>
-		</div>
+		</motion.div>
 	);
 }

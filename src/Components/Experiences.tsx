@@ -1,20 +1,48 @@
+import { motion } from "framer-motion";
 import calIcon from "@/assets/cal-com-icon.svg";
 import pfmIcon from "@/assets/pfm-logo.png";
 import dollar50 from "@/assets/dollar50.png";
 import dollar10 from "@/assets/dollar10.png";
 import reactLib from "@/assets/react-lib.png";
+
 export default function Experiences() {
   return (
-    <div className="mt-28 flex md:flex-row flex-col gap-20 justify-between">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6 }}
+      className="mt-28 flex md:flex-row flex-col gap-20 justify-between"
+    >
       <div>
-        <h1 className="md:hidden block pb-3 text-lg mb-2">
+        <motion.h1
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="md:hidden block pb-3 text-lg mb-2"
+        >
           Hey 👋 I'm Tushar Bhatt ,{" "}
           <span className="text-sm">
             Full Stack Front End Engineer with ~ an year of experience.
           </span>
-        </h1>
-        <h2 className="text-2xl font-bold">Experiences</h2>
-        <div className="my-7">
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl font-bold"
+        >
+          Experiences
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="my-7"
+        >
           <div className="flex gap-2 text-lg">
             <img src={calIcon} className="size-8 rounded-full" />
             <div className="flex flex-col">
@@ -83,8 +111,13 @@ export default function Experiences() {
               </li>
             </ul>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div className="flex gap-2 text-lg">
             <img src={pfmIcon} className="size-8 rounded-full" />
             <div className="flex flex-col">
@@ -129,10 +162,23 @@ export default function Experiences() {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div>
-        <h2 className="text-2xl font-bold">Open Source</h2>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.h2
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl font-bold"
+        >
+          Open Source
+        </motion.h2>
         <div className="mt-7">
           <ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
             <li className="text-lg font-bold"> Won Bounties worth $60</li>
@@ -204,7 +250,7 @@ export default function Experiences() {
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
