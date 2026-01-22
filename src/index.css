@@ -38,3 +38,7 @@ a::after {
 a:hover::after {
   width: 100%;
 }
+
+a.no-underline-hover::after {
+  display: none;
+}
