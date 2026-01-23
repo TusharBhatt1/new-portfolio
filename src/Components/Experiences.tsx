@@ -58,7 +58,7 @@ export default function Experiences() {
                 </a>
               </div>
               <span className="text-sm text-slate-400">
-                Bengaluru (Remote) | Jul 2024 – Present (Intern → Contract)
+                Bengaluru (Remote) | Jul 2024 – Present (Intern → Full time contract)
               </span>
             </div>
           </div>
