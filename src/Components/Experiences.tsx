@@ -40,8 +40,60 @@ export default function Experiences() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="my-7"
+        >
+          <div className="flex gap-2 text-lg">
+            <img src={pfmIcon} className="size-8 rounded-full" />
+            <div className="flex flex-col">
+              <div className="flex gap-2">
+                <span>Frontend Engineer at</span>
+                <a
+                  className="font-bold"
+                  href="https://pocketfm.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pocket FM{" "}
+                </a>
+              </div>
+              <span className="text-sm text-slate-400">
+                Bengaluru (Remote) | Jul 2024 – Present (Intern → Contract)
+              </span>
+            </div>
+          </div>
+          <div className="mt-4 text-slate-200">
+            <ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
+              <li>
+                Collaborated with the Pocket Toons team to implement an image
+                trimming feature, reducing backend calls and S3 costs.
+              </li>
+              <li>
+                Revamped the Newsroom application for Pocket FM using Next.js
+                and React Query.
+              </li>
+              <li>
+                Utilized TypeScript, Tailwind, and Shadcn UI in the tech stack.
+              </li>
+              <li>
+                Conducted E2E testing with Cypress and component testing with
+                Vitest.
+              </li>
+              <li>Managed backend in Contentful CMS.</li>
+              <li>
+                Improved website performance, raising Lighthouse scores from 70
+                to nearly 100, optimizing LCP (3.5s to 1.2s), CLS (0.25 to
+                0.02), and TBT (400ms to 50ms).
+              </li>
+            </ul>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+
         >
           <div className="flex gap-2 text-lg">
             <img src={calIcon} className="size-8 rounded-full" />
@@ -58,7 +110,7 @@ export default function Experiences() {
                 </a>
               </div>
               <span className="text-sm text-slate-400">
-                Feb 2025 - May 2025 (USA , Remote)
+                USA (Remote) | Feb 2025 - May 2025
               </span>
             </div>
           </div>
@@ -108,57 +160,6 @@ export default function Experiences() {
               <li>
                 Was closely working with team and community members to ship new
                 features.
-              </li>
-            </ul>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <div className="flex gap-2 text-lg">
-            <img src={pfmIcon} className="size-8 rounded-full" />
-            <div className="flex flex-col">
-              <div className="flex gap-2">
-                <span>Front End Intern at</span>
-                <a
-                  className="font-bold"
-                  href="https://pocketfm.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pocket FM{" "}
-                </a>
-              </div>
-              <span className="text-sm text-slate-400">
-                July 2024 - January 2025 (Bengaluru , Remote)
-              </span>
-            </div>
-          </div>
-          <div className="mt-4 text-slate-200">
-            <ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
-              <li>
-                Collaborated with the Pocket Toons team to implement an image
-                trimming feature, reducing backend calls and S3 costs.
-              </li>
-              <li>
-                Revamped the Newsroom application for Pocket FM using Next.js
-                and React Query.
-              </li>
-              <li>
-                Utilized TypeScript, Tailwind, and Shadcn UI in the tech stack.
-              </li>
-              <li>
-                Conducted E2E testing with Cypress and component testing with
-                Vitest.
-              </li>
-              <li>Managed backend in Contentful CMS.</li>
-              <li>
-                Improved website performance, raising Lighthouse scores from 70
-                to nearly 100, optimizing LCP (3.5s to 1.2s), CLS (0.25 to
-                0.02), and TBT (400ms to 50ms).
               </li>
             </ul>
           </div>
