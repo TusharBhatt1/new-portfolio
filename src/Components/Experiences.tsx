@@ -65,9 +65,14 @@ export default function Experiences() {
           <div className="mt-4 text-slate-200">
             <ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
               <li>
+                Owned, maintained and contributed to multiple production repositories, including pocketfm.com, xtra, blaze, and
+                aural-ui.
+              </li>
+              <li>
                 Collaborated with the Pocket Toons team to implement an image
                 trimming feature, reducing backend calls and S3 costs.
               </li>
+
               <li>
                 Revamped the Newsroom application for Pocket FM using Next.js
                 and React Query.
