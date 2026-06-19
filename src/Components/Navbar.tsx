@@ -1,6 +1,7 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import Socials from "./other/Socials";
+import avatar from "@/assets/hacker.png";
 
 const links = [
   { label: "Experience", href: "#experience" },
@@ -31,12 +32,13 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8 flex items-center justify-between">
         <a
           href="#top"
-          className="font-display font-bold text-lg tracking-tight flex items-center gap-2"
+          className="font-display font-bold text-lg tracking-tight flex items-center gap-3 group"
         >
-          <span className="inline-flex h-7 w-7 items-center justify-center bg-fg text-ink text-xs font-mono font-bold">
-            TB
-          </span>
-          <span className="hidden sm:inline">Tushar Bhatt</span>
+          <img
+            src={avatar}
+            alt="Tushar Bhatt"
+            className="h-9 w-9 object-contain rounded-full object-cover bg-surface p-0.5 border border-line group-hover:border-fg transition-colors"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

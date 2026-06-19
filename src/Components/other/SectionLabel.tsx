@@ -21,7 +21,13 @@ export default function SectionLabel({
       <h2 className="font-mono text-xs uppercase tracking-[0.25em] text-muted">
         {title}
       </h2>
-      <span className="flex-1 h-px bg-line" />
+      <motion.span
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="flex-1 h-px bg-line origin-left"
+      />
     </motion.div>
   );
 }

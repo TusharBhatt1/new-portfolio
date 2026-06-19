@@ -85,7 +85,8 @@ export default function FeaturedProject() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="lg:col-span-7 border border-line bg-surface p-2 overflow-hidden"
+          whileHover={{ y: -4 }}
+          className="lg:col-span-7 border border-line bg-surface p-2 overflow-hidden transition-shadow duration-500 hover:shadow-[0_30px_90px_-30px_rgba(255,255,255,0.14)]"
         >
           <img
             src={Calcompanion}

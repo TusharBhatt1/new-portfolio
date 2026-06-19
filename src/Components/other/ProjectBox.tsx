@@ -18,7 +18,8 @@ export default function ProjectBox({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-      className="group border border-line bg-surface hover:border-faint transition-colors"
+      whileHover={{ y: -6 }}
+      className="group border border-line bg-surface hover:border-fg/30 transition-[border-color,box-shadow] duration-300 hover:shadow-[0_18px_50px_-20px_rgba(255,255,255,0.14)]"
     >
       <div className="overflow-hidden border-b border-line">
         <img

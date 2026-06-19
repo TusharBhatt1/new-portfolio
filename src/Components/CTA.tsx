@@ -5,9 +5,13 @@ export default function CTA() {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-6xl px-5 sm:px-8 py-28 border-t border-line"
+      className="relative mx-auto max-w-6xl px-5 sm:px-8 py-28 border-t border-line overflow-hidden"
     >
-      <div className="max-w-4xl">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-32 left-0 h-80 w-[36rem] max-w-full bg-[radial-gradient(closest-side,rgba(255,255,255,0.08),transparent)]"
+      />
+      <div className="relative max-w-4xl">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

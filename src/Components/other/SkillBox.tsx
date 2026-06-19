@@ -16,7 +16,7 @@ export default function SkillBox({
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.4, delay: index * 0.04, ease: "easeOut" }}
       whileHover={{ y: -4 }}
-      className="group aspect-square flex flex-col items-center justify-center gap-3 border border-line bg-surface text-muted hover:border-fg hover:bg-white/5 transition-colors duration-300"
+      className="group aspect-square flex flex-col items-center justify-center gap-3 border border-line bg-surface text-muted hover:border-fg hover:bg-white/5 transition-[border-color,background-color,box-shadow] duration-300 hover:shadow-[0_12px_36px_-16px_rgba(255,255,255,0.16)]"
     >
       <span
         className={`text-${color} text-2xl sm:text-3xl transition-transform duration-300 group-hover:scale-110`}

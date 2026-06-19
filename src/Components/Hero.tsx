@@ -44,9 +44,12 @@ export default function Hero() {
             variants={item}
             className="font-display font-bold leading-[0.92] tracking-tighter text-[clamp(3rem,12vw,9.5rem)]"
           >
-            TUSHAR
-            <br />
-            BHATT<span className="text-faint">.</span>
+            <span className="text-sheen">
+              TUSHAR
+              <br />
+              BHATT
+            </span>
+            <span className="text-faint">.</span>
           </motion.h1>
 
           <motion.div
@@ -117,6 +120,16 @@ export default function Hero() {
             >
               View skills
             </a>
+          </motion.div>
+
+          <motion.div
+            variants={item}
+            className="mt-16 flex items-center gap-3 text-faint"
+          >
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em]">
+              Scroll
+            </span>
+            <span className="animate-nudge text-sm leading-none">↓</span>
           </motion.div>
         </motion.div>
       </div>
