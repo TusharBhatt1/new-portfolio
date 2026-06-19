@@ -37,7 +37,7 @@ export default function Navbar() {
           <img
             src={avatar}
             alt="Tushar Bhatt"
-            className="h-9 w-9 object-contain rounded-full object-cover bg-surface p-0.5 border border-line group-hover:border-fg transition-colors"
+            className="h-9 w-9 rounded-full object-contain bg-surface p-1 border border-line"
           />
         </a>
 

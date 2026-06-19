@@ -95,6 +95,10 @@ export default function Hero() {
             <div className="flex flex-col gap-3 font-mono text-xs uppercase tracking-widest text-muted shrink-0">
               <span className="flex items-center gap-2">
                 <span className="inline-block h-1.5 w-1.5 bg-fg" />
+                <span className="text-fg font-medium">2 years</span> experience
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="inline-block h-1.5 w-1.5 bg-fg" />
                 Bengaluru, India
               </span>
               <span className="flex items-center gap-2">
