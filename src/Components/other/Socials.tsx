@@ -5,12 +5,12 @@ import { IoCall } from "react-icons/io5";
 
 export interface SocialType {
 	icon: React.ReactNode;
-	color: string;
+	label: string;
 	href?: string;
-	onClick?: () => void; // Add onClick property
+	onClick?: () => void;
 }
 
-export default function Socials() {
+export default function Socials({ size = "md" }: { size?: "sm" | "md" }) {
 	const handleCallClick = () => {
 		alert("My Contact : +917617446649");
 	};
@@ -18,43 +18,45 @@ export default function Socials() {
 	const socials: SocialType[] = [
 		{
 			icon: <FaGithub />,
-			color: "gray-500",
+			label: "GitHub",
 			href: "https://github.com/TusharBhatt1",
 		},
 		{
 			icon: <FaLinkedin />,
-			color: "blue-500",
+			label: "LinkedIn",
 			href: "https://linkedin.com/in/tushar-bhatt-59b64623b",
 		},
 		{
 			icon: <FaTwitter />,
-			color: "blue-700",
+			label: "Twitter",
 			href: "https://twitter.com/Tushar0135",
 		},
-
 		{
 			icon: <FaEnvelope />,
-			color: "yellow-400",
+			label: "Email",
 			href: "mailto:tusharbhatt0135@gmail.com",
 		},
-		{ icon: <IoCall />, color: "gray-500", onClick: handleCallClick }, // Add onClick handler
+		{ icon: <IoCall />, label: "Call", onClick: handleCallClick },
 	];
 
+	const dim = size === "sm" ? "text-base" : "text-lg";
+
 	return (
-		<div className="flex gap-7">
+		<div className="flex items-center gap-1">
 			{socials.map((social, index) => (
 				<motion.a
 					key={index}
 					href={social.href}
-					target="_blank"
+					target={social.href ? "_blank" : undefined}
 					rel="noopener noreferrer"
 					onClick={social.onClick}
-					initial={{ opacity: 0, scale: 0 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.3, delay: index * 0.1 }}
-					whileHover={{ scale: 1.2, y: -5, rotate: 5 }}
+					aria-label={social.label}
+					initial={{ opacity: 0, y: -6 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.3, delay: index * 0.06 }}
+					whileHover={{ y: -2 }}
 					whileTap={{ scale: 0.9 }}
-					className={`text-${social.color} cursor-pointer text-xl sm:text-3xl hover:bg-slate-700 p-2 rounded-full`}
+					className={`${dim} cursor-pointer p-2 text-muted hover:text-fg transition-colors duration-200`}
 				>
 					{social.icon}
 				</motion.a>

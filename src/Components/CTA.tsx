@@ -3,131 +3,66 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function CTA() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-      className="relative my-32 py-20 px-5 sm:px-7"
+    <section
+      id="contact"
+      className="mx-auto max-w-6xl px-5 sm:px-8 py-28 border-t border-line"
     >
-      {/* Subtle background gradient */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.2 }}
-        className="absolute inset-0 bg-gradient-to-br from-slate-900/30 via-transparent to-slate-900/30 rounded-3xl"
-      />
-      
-      <div className="relative max-w-3xl mx-auto text-center space-y-8">
-        {/* Main headline */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+      <div className="max-w-4xl">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="space-y-4"
+          transition={{ duration: 0.5 }}
+          className="font-mono text-xs uppercase tracking-[0.3em] text-faint mb-8"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
-            Let's build something
-            <br />
-            <span className="bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent inline-block pb-3">
-              remarkable together
-            </span>
-          </h2>
-        </motion.div>
+          08 — Contact
+        </motion.p>
 
-        {/* Subheading */}
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="font-display font-bold tracking-tighter leading-[0.95] text-[clamp(2.5rem,9vw,7rem)]"
+        >
+          LET&apos;S BUILD
+          <br />
+          SOMETHING<span className="text-faint">.</span>
+        </motion.h2>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed"
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mt-8 max-w-xl text-lg text-muted leading-relaxed"
         >
-          Always open to discussing new opportunities, interesting projects, or just connecting with fellow developers.
+          Always open to new opportunities, interesting problems, or just
+          connecting with fellow engineers.
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="mt-10 flex flex-wrap items-center gap-6"
         >
-          {/* Primary CTA */}
-          <motion.a
+          <a
             href="mailto:tusharbhatt0135@gmail.com"
-            className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full overflow-hidden shadow-lg shadow-white/10 no-underline-hover"
-            style={{ textDecoration: 'none' }}
-            whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(255, 255, 255, 0.15)" }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ duration: 0.2 }}
+            className="group inline-flex items-center gap-3 bg-fg text-ink font-mono text-xs uppercase tracking-widest px-7 py-4 hover:bg-muted transition-colors"
           >
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-slate-100 to-white opacity-0 group-hover:opacity-100"
-              transition={{ duration: 0.3 }}
-            />
-            <span className="relative flex items-center gap-2 z-10">
-              Get in touch
-              <motion.span
-                initial={{ x: 0 }}
-                whileHover={{ x: 4 }}
-                transition={{ duration: 0.2 }}
-              >
-                <FaArrowRight className="text-sm" />
-              </motion.span>
-            </span>
-          </motion.a>
-
-          {/* Secondary CTA
-          <motion.a
+            Get in touch
+            <FaArrowRight className="text-[10px] transition-transform group-hover:translate-x-1" />
+          </a>
+          <a
             href="mailto:tusharbhatt0135@gmail.com"
-            className="group px-8 py-4 border border-slate-700 text-white font-medium rounded-full hover:border-slate-500 transition-colors duration-300 backdrop-blur-sm"
-            whileHover={{ scale: 1.05, borderColor: "rgb(148, 163, 184)" }}
-            whileTap={{ scale: 0.98 }}
-            transition={{ duration: 0.2 }}
+            className="link-underline font-mono text-xs uppercase tracking-widest text-muted hover:text-fg transition-colors"
           >
-            <span className="flex items-center gap-2">
-              <motion.span
-                whileHover={{ rotate: [0, -10, 10, -10, 0] }}
-                transition={{ duration: 0.5 }}
-              >
-                <FaEnvelope className="text-sm" />
-              </motion.span>
-              Email me
-            </span>
-          </motion.a> */}
-        </motion.div>
-
-        {/* Decorative element */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="pt-8"
-        >
-          <div className="flex items-center justify-center gap-2 text-slate-600 text-sm">
-            <motion.div
-              className="h-px w-12 bg-slate-700"
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            />
-            <span>Available for opportunities</span>
-            <motion.div
-              className="h-px w-12 bg-slate-700"
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            />
-          </div>
+            tusharbhatt0135@gmail.com
+          </a>
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 }

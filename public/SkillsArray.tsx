@@ -1,10 +1,11 @@
 import {
-  FaHtml5,
-  FaCss3,
   FaJsSquare,
   FaReact,
   FaReacteurope,
+  FaNodeJs,
 } from "react-icons/fa";
+import { FaGaugeHigh } from "react-icons/fa6";
+import { HiSparkles } from "react-icons/hi";
 import {
   SiTailwindcss,
   SiTypescript,
@@ -12,7 +13,6 @@ import {
   SiMongodb,
   SiExpress,
   SiGit,
-  SiTrpc
 } from "react-icons/si";
 
 
@@ -24,19 +24,14 @@ export interface SkillsType {
 
 export const allSkills: SkillsType[] = [
   {
-    name: "HTML",
-    icon: <FaHtml5 />,
-    color: "orange-400", // HTML5 orange color
-  },
-  {
-    name: "CSS",
-    icon: <FaCss3 />,
-    color: "blue-400", // CSS3 blue color
-  },
-  {
     name: "JavaScript",
     icon: <FaJsSquare />,
     color: "yellow-400", // JavaScript yellow color
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript />,
+    color: "blue-600", // TypeScript blue color
   },
   {
     name: "React",
@@ -46,12 +41,7 @@ export const allSkills: SkillsType[] = [
   {
     name: "Next.js",
     icon: <FaReacteurope />,
-    color: "gray-900", // Next.js black color
-  },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript />,
-    color: "blue-600", // TypeScript blue color
+    color: "gray-100", // Next.js (light on dark)
   },
   {
     name: "Tailwind",
@@ -64,23 +54,33 @@ export const allSkills: SkillsType[] = [
     color: "purple-600", // Redux purple color
   },
   {
-    name: "Git/Github",
-    icon: <SiGit />,
-    color: "black", // Zustand gold color
-  },
-  {
-    name: "Trpc",
-    icon: <SiTrpc />,
-    color: "blue-500", // Node.js green color
+    name: "Node",
+    icon: <FaNodeJs />,
+    color: "green-500", // Node.js green
   },
   {
     name: "Express",
-    icon: <SiExpress/> ,
-    color: "gray-900", // Express black color
+    icon: <SiExpress />,
+    color: "gray-300", // Express (light on dark)
   },
   {
     name: "MongoDB",
     icon: <SiMongodb />,
     color: "green-600", // MongoDB green color
+  },
+  {
+    name: "Git/Github",
+    icon: <SiGit />,
+    color: "orange-500", // Git orange
+  },
+  {
+    name: "Performance",
+    icon: <FaGaugeHigh />,
+    color: "green-400", // web vitals / speed
+  },
+  {
+    name: "Claude AI",
+    icon: <HiSparkles />,
+    color: "orange-400", // Claude warm tone
   },
 ];

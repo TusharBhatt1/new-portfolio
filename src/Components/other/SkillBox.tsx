@@ -1,25 +1,31 @@
 import { motion } from "framer-motion";
 import { SkillsType } from "@public/SkillsArray";
 
-export default function SkillBox({ skill, index }: { skill: SkillsType; index: number }) {
+export default function SkillBox({
+  skill,
+  index,
+}: {
+  skill: SkillsType;
+  index: number;
+}) {
   const { name, icon, color } = skill;
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.8, y: 20 }}
-      whileInView={{ opacity: 1, scale: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.4, delay: index * 0.05, ease: "easeOut" }}
-      whileHover={{ scale: 1.1, y: -5, transition: { duration: 0.2 } }}
-      className="hover:bg-slate-800 bg-slate-700 cursor-pointer border border-black text-sm sm:text-md p-4 sm:p-12 flex flex-col justify-center items-center h-20 w-20 rounded-xl"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.4, delay: index * 0.04, ease: "easeOut" }}
+      whileHover={{ y: -4 }}
+      className="group aspect-square flex flex-col items-center justify-center gap-3 border border-line bg-surface text-muted hover:border-fg hover:bg-white/5 transition-colors duration-300"
     >
-      <motion.span
-        className={`text-${color} text-xl sm:text-3xl p-2 rounded-full`}
-        whileHover={{ rotate: 360 }}
-        transition={{ duration: 0.6 }}
+      <span
+        className={`text-${color} text-2xl sm:text-3xl transition-transform duration-300 group-hover:scale-110`}
       >
         {icon}
-      </motion.span>
-      <p className="mt-2">{name}</p>
+      </span>
+      <p className="font-mono text-[10px] uppercase tracking-widest text-muted group-hover:text-fg transition-colors">
+        {name}
+      </p>
     </motion.div>
   );
 }

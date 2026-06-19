@@ -1,73 +1,99 @@
 import { motion } from "framer-motion";
-import Heading from "./other/Heading";
+import SectionLabel from "./other/SectionLabel";
 import Calcompanion from "@/assets/cal-companion.png";
+
+const tags = ["WXT Framework", "Browser Extension", "Content Scripts", "Cal.com"];
+
+const features = [
+  "Quick access to recent upcoming / past bookings.",
+  "Mark attendee show / no-show directly on Google Calendar events — via a content script that injects button nodes into the event dialog.",
+];
 
 export default function FeaturedProject() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6 }}
-    >
-      <Heading title="Featured Project" alignment="left" />
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="space-y-5"
-      >
-        <div className="flex flex-col gap-4">
-          <p className="text-lg">
-            Built Official Browser Extension for{" "}
+    <section id="featured" className="mx-auto max-w-6xl px-5 sm:px-8 py-28">
+      <SectionLabel index="04" title="Featured Project" />
+
+      <div className="grid lg:grid-cols-12 gap-10 items-start">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="lg:col-span-5"
+        >
+          <h3 className="font-display text-4xl sm:text-5xl font-bold leading-[1.05] tracking-tight">
+            Cal
+            <br />
+            Companion
+          </h3>
+          <p className="mt-5 text-muted leading-relaxed">
+            The official browser extension for{" "}
             <a
-              className="font-bold"
-              target="_blank"
               href="https://cal.com"
-              rel="noopener noreferrer"
-            >
-              Cal.com{" "}
-            </a>{" "}
-            from scratch using WXT framework :{" "}
-            <a
-              className="text-blue-400"
               target="_blank"
-              href="https://chromewebstore.google.com/detail/cal-companion/cbhlgojmamgmdijlkkokcmmjghgckahc?hl=en-US&utm_source=ext_sidebar"
+              rel="noopener noreferrer"
+              className="link-underline text-fg font-medium"
             >
-              Cal Companion
+              Cal.com
             </a>
+            , built from scratch.
           </p>
 
-          <h3>Currently packed with -</h3>
-          <ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
-            <li>Quick access to recent upcoming/past bookings</li>
-            <li>
-              Ability to mark attendee show/no show on Google Calendar event -
-              by using the content script and adding button nodes to
-              calender.google event dialog
-            </li>
+          <ul className="mt-6 space-y-3 text-muted">
+            {features.map((f, i) => (
+              <li key={i} className="flex gap-3">
+                <span className="mt-2 h-px w-4 bg-faint shrink-0" />
+                <span className="leading-relaxed">{f}</span>
+              </li>
+            ))}
           </ul>
-          <span>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {tags.map((t) => (
+              <span
+                key={t}
+                className="font-mono text-[10px] uppercase tracking-widest text-muted border border-line px-3 py-1.5"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-4 font-mono text-xs uppercase tracking-widest">
             <a
-              className="text-slate-400"
+              href="https://chromewebstore.google.com/detail/cal-companion/cbhlgojmamgmdijlkkokcmmjghgckahc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-fg text-ink px-5 py-3 hover:bg-muted transition-colors"
+            >
+              Chrome Store ↗
+            </a>
+            <a
               href="https://x.com/Tushar0135/status/1953383306772222010"
               target="_blank"
+              rel="noopener noreferrer"
+              className="border border-line px-5 py-3 text-muted hover:text-fg hover:border-fg transition-colors"
             >
-              View Post on X (Twitter)
+              Post on X ↗
             </a>
-          </span>
-        </div>
+          </div>
+        </motion.div>
 
-        <motion.img
-          src={Calcompanion}
-          initial={{ opacity: 0, scale: 0.95 }}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          whileHover={{ scale: 1.02 }}
-        />
-      </motion.div>
-    </motion.div>
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          className="lg:col-span-7 border border-line bg-surface p-2 overflow-hidden"
+        >
+          <img
+            src={Calcompanion}
+            alt="Cal Companion browser extension"
+            className="w-full"
+          />
+        </motion.div>
+      </div>
+    </section>
   );
 }

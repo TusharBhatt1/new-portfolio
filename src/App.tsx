@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
-import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
-import Wom from "./Components/Wom";
+import Hero from "./Components/Hero";
 import Experiences from "./Components/Experiences";
+import OpenSource from "./Components/OpenSource";
 import FeaturedProject from "./Components/FeaturedProject";
+import Wom from "./Components/Wom";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 import CTA from "./Components/CTA";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -14,18 +16,20 @@ export default function App() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col"
+      className="relative min-h-screen bg-ink text-fg"
     >
       <Navbar />
-      <div className="px-5 sm:px-7">
+      <main>
+        <Hero />
         <Experiences />
+        <OpenSource />
         <FeaturedProject />
         <Wom />
         <Skills />
         <Projects />
         <CTA />
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </motion.div>
   );
 }

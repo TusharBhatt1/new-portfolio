@@ -1,50 +1,62 @@
 import { motion } from "framer-motion";
-import {AiFillGithub} from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai";
 import { TbWorld } from "react-icons/tb";
 import { projectType } from "../../../public/ProjectsArray";
 
-export default function ProjectBox({ project, index }: { project: projectType; index: number }) {
+export default function ProjectBox({
+  project,
+  index,
+}: {
+  project: projectType;
+  index: number;
+}) {
   const { name, liveLink, gitLink, tech, image } = project;
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className="border border-slate-300 bg-white flex flex-col gap-4 inline-block p-4 rounded-md"
+      transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+      className="group border border-line bg-surface hover:border-faint transition-colors"
     >
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between gap-2">
-          <p className="text-sm font-bold text-black">{name}</p>
-          <span className="flex text-2xl gap-4">
-            <motion.a
+      <div className="overflow-hidden border-b border-line">
+        <img
+          src={image}
+          alt={name}
+          className="w-full transition-transform duration-500 group-hover:scale-[1.04]"
+        />
+      </div>
+      <div className="p-5">
+        <div className="flex items-start justify-between gap-4">
+          <p className="font-display font-semibold text-base leading-snug">
+            {name}
+          </p>
+          <span className="flex gap-1 text-lg shrink-0">
+            <a
               href={gitLink}
-              className="bg-slate-700 hover:bg-black p-1 rounded-full"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="p-1.5 text-muted hover:text-fg transition-colors"
             >
-              <AiFillGithub/>
-            </motion.a>
-            <motion.a
+              <AiFillGithub />
+            </a>
+            <a
               href={liveLink}
-              className="bg-slate-700 hover:bg-black p-1 rounded-full"
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.95 }}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live site"
+              className="p-1.5 text-muted hover:text-fg transition-colors"
             >
-              <TbWorld/>
-            </motion.a>
+              <TbWorld />
+            </a>
           </span>
         </div>
-        <p className="text-xs text-slate-500">{tech}</p>
+        <p className="mt-3 font-mono text-[10px] uppercase tracking-widest text-faint leading-relaxed">
+          {tech}
+        </p>
       </div>
-      <motion.img
-        className="w-full rounded-md"
-        src={image}
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.3 }}
-      />
     </motion.div>
   );
 }
