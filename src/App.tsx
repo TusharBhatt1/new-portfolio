@@ -1,4 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
+import Background from "./Components/Background";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Experiences from "./Components/Experiences";
@@ -29,18 +30,21 @@ export default function App() {
         style={{ scaleX: progress }}
         className="fixed top-0 left-0 right-0 h-0.5 bg-fg origin-left z-[60]"
       />
+      <Background />
       <Navbar />
-      <main className="relative z-10">
-        <Hero />
-        <Experiences />
-        <OpenSource />
-        <FeaturedProject />
-        <Wom />
-        <Skills />
-        <Projects />
-        <CTA />
-      </main>
-      <Footer />
+      <div className="relative z-10">
+        <main>
+          <Hero />
+          <Experiences />
+          <OpenSource />
+          <FeaturedProject />
+          <Wom />
+          <Skills />
+          <Projects />
+          <CTA />
+        </main>
+        <Footer />
+      </div>
     </motion.div>
   );
 }

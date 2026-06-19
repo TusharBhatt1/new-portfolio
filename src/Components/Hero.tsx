@@ -42,7 +42,7 @@ export default function Hero() {
 
           <motion.h1
             variants={item}
-            className="font-display font-bold leading-[0.92] tracking-tighter text-[clamp(3rem,12vw,9.5rem)]"
+            className="font-display font-bold leading-[0.92] tracking-tighter text-[clamp(3rem,8vw,9.5rem)]"
           >
             <span className="text-sheen">
               TUSHAR
@@ -96,10 +96,6 @@ export default function Hero() {
               <span className="flex items-center gap-2">
                 <span className="inline-block h-1.5 w-1.5 bg-fg" />
                 <span className="text-fg font-medium">2 years</span> experience
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="inline-block h-1.5 w-1.5 bg-fg" />
-                Bengaluru, India
               </span>
               <span className="flex items-center gap-2">
                 <span className="relative inline-block h-1.5 w-1.5 bg-fg">
