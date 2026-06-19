@@ -45,7 +45,7 @@ export default function Background() {
           className={`absolute rounded-full blur-3xl ${b.className}`}
           style={{
             background:
-              "radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%)",
+              "radial-gradient(circle, rgba(255,255,255,0.08), transparent 0%)",
           }}
           animate={reduce ? undefined : b.anim}
           transition={{
