@@ -115,10 +115,12 @@ export default function Hero() {
               <FaArrowRight className="text-[10px] transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#skills"
+              href="https://drive.google.com/file/d/1swwpVJJo-JIhdNUhLHKYs6oOU27aHjJt/view"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border border-line text-fg font-mono text-xs uppercase tracking-widest px-6 py-4 hover:border-fg transition-colors"
             >
-              View skills
+              View resume
             </a>
           </motion.div>
 

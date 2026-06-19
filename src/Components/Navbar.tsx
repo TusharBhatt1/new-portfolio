@@ -5,6 +5,7 @@ import avatar from "@/assets/hacker.png";
 
 const links = [
   { label: "Experience", href: "#experience" },
+  { label: "Skills₹", href: "#skills" },
   { label: "Open Source", href: "#open-source" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
