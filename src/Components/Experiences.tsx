@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import calIcon from "@/assets/cal-com-icon.svg";
 import pfmIcon from "@/assets/pfm-logo.png";
+import refoldIcon from "@/assets/refold-logo.png";
 import dollar50 from "@/assets/dollar50.png";
 import dollar10 from "@/assets/dollar10.png";
 import reactLib from "@/assets/react-lib.png";
@@ -44,6 +45,54 @@ export default function Experiences() {
           className="my-7"
         >
           <div className="flex gap-2 text-lg">
+            <img src={refoldIcon} className="size-8 rounded-full" />
+            <div className="flex flex-col">
+              <div className="flex gap-2">
+                <span>Software Engineer, Frontend at</span>
+                <a
+                  className="font-bold"
+                  href="https://refold.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Refold AI{" "}
+                </a>
+              </div>
+              <span className="text-sm text-slate-400">
+                Bengaluru | Mar – June 2026
+              </span>
+            </div>
+          </div>
+          <div className="mt-4 text-slate-200">
+            <ul style={{ listStyleType: "disc" }} className="space-y-2 pl-4">
+              <li>
+                Added child/sibling node logic with backend support to enhance
+                canvas interactivity.
+              </li>
+              <li>
+                Boosted performance via lazy loading, minimizing unnecessary DOM
+                renders.
+              </li>
+              <li>
+                Built an integration graph using D3.js for visualizing workflows.
+              </li>
+              <li>
+                Leveraged{" "}
+                <span className="italic">Claude AI</span> to accelerate
+                development, assist with debugging, and streamline repetitive
+                tasks.
+              </li>
+            </ul>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="my-7"
+        >
+          <div className="flex gap-2 text-lg">
             <img src={pfmIcon} className="size-8 rounded-full" />
             <div className="flex flex-col">
               <div className="flex gap-2">
@@ -58,7 +107,7 @@ export default function Experiences() {
                 </a>
               </div>
               <span className="text-sm text-slate-400">
-                Bengaluru (Remote) | Jul 2024 – Present (Intern → Full time contract)
+                Bengaluru (Remote) | Jul 2024 – Mar 2026
               </span>
             </div>
           </div>
@@ -89,6 +138,11 @@ export default function Experiences() {
                 Improved website performance, raising Lighthouse scores from 70
                 to nearly 100, optimizing LCP (3.5s to 1.2s), CLS (0.25 to
                 0.02), and TBT (400ms to 50ms).
+              </li>
+              <li>
+                Leveraged{" "}
+                <span className="italic">Cursor AI</span> to speed up refactoring
+                during bundle-size reduction.
               </li>
             </ul>
           </div>
@@ -165,6 +219,11 @@ export default function Experiences() {
               <li>
                 Was closely working with team and community members to ship new
                 features.
+              </li>
+              <li>
+                Leveraged{" "}
+                <span className="italic">ChatGPT</span> for faster documentation,
+                debugging and repetitive tasks.
               </li>
             </ul>
           </div>
