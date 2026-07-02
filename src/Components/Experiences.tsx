@@ -41,7 +41,7 @@ const roles: Role[] = [
       <>
         Designed and implemented a full-stack Tags feature, building REST APIs, 
         database models, and frontend integration.
-      </>
+      </>,
       <>
         Boosted performance via <H>lazy loading</H>, minimizing unnecessary DOM
         renders.
