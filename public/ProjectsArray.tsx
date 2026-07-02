@@ -4,6 +4,8 @@ import bestbuy from "../src/assets/Images/BestBuy.png";
 import sketch from "../src/assets/Images/Sketch.png";
 import genius from "../src/assets/Images/genius.png";
 import cocreate from "../src/assets/Images/cocreate.png";
+import sendkit from "../src/assets/Images/sendkit.png";
+
 export interface projectType {
   name: string;
   tech: string;
@@ -18,6 +20,13 @@ interface ProjectsType {
 
 export const projects: ProjectsType = {
   fullStack: [
+     {
+      name: "SendKit - MCP Server & npm package for Telegram Messaging",
+      tech: "TypeScript, Model Context Protocol (MCP), Telegram Bot API, bun, Hono",
+      liveLink: "https://sendkit-tb.netlify.app",
+      gitLink: "https://github.com/TusharBhatt1/sendkit",
+      image: sendkit,
+    },
     {
       name: "CoCreate - Real time collaborative drawing tool",
       tech: "NextJS, Liveblocks, Prisma, Typescript, Tailwind",
