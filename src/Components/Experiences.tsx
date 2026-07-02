@@ -30,7 +30,7 @@ const roles: Role[] = [
     company: "Refold AI",
     href: "https://refold.ai",
     logo: refoldIcon,
-    title: "Software Engineer, Frontend",
+    title: "Software Engineer",
     period: "Mar 2026 - Present",
     location: "Bengaluru",
     points: [
