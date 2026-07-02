@@ -31,13 +31,17 @@ const roles: Role[] = [
     href: "https://refold.ai",
     logo: refoldIcon,
     title: "Software Engineer, Frontend",
-    period: "Mar – Jun 2026",
+    period: "Mar 2026 - Present",
     location: "Bengaluru",
     points: [
       <>
         Added <H>child / sibling node logic</H> with backend support to enhance
         canvas interactivity.
       </>,
+      <>
+        Designed and implemented a full-stack Tags feature, building REST APIs, 
+        database models, and frontend integration.
+      </>
       <>
         Boosted performance via <H>lazy loading</H>, minimizing unnecessary DOM
         renders.
@@ -55,7 +59,7 @@ const roles: Role[] = [
     company: "Pocket FM",
     href: "https://pocketfm.com",
     logo: pfmIcon,
-    title: "Frontend Engineer",
+    title: "Software Engineer, Frontend",
     period: "Jul 2024 – Mar 2026",
     location: "Bengaluru (Remote)",
     points: [
