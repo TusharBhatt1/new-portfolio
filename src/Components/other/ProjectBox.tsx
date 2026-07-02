@@ -25,7 +25,7 @@ export default function ProjectBox({
         <img
           src={image}
           alt={name}
-          className="w-full transition-transform duration-500 group-hover:scale-[1.04]"
+          className="w-full h-80 object-contain transition-transform duration-500 group-hover:scale-[1.04]"
         />
       </div>
       <div className="p-5">
