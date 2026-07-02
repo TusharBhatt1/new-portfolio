@@ -39,7 +39,7 @@ const roles: Role[] = [
         canvas interactivity.
       </>,
       <>
-        Designed and implemented a full-stack Tags feature, building REST APIs, 
+        Designed and implemented a <H>full-stack Tags feature</H>, building REST APIs, 
         database models, and frontend integration.
       </>,
       <>
