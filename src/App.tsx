@@ -30,7 +30,7 @@ export default function App() {
         style={{ scaleX: progress }}
         className="fixed top-0 left-0 right-0 h-0.5 bg-fg origin-left z-[60]"
       />
-      <Background />
+      {/* <Background /> */}
       <Navbar />
       <div className="relative z-10">
         <main>
