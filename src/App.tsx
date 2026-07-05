@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
-import Background from "./Components/Background";
+// import Background from "./Components/Background";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Experiences from "./Components/Experiences";
